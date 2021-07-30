@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:single-spa:users": "ng build users --prod",
+    "serve:single-spa:users": "ng s --project users --disable-host-check --port 9002 --live-reload false"
   },
   "private": true,
   "dependencies": {
@@ -19,10 +21,13 @@
     "@angular/platform-browser-dynamic": "~12.1.0",
     "@angular/router": "~12.1.0",
     "rxjs": "~6.6.0",
+    "single-spa": ">=4.0.0",
+    "single-spa-angular": "^5.0.2",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-builders/custom-webpack": "12.1.0",
     "@angular-devkit/build-angular": "~12.1.4",
     "@angular/cli": "~12.1.4",
     "@angular/compiler-cli": "~12.1.0",
