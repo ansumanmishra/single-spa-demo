@@ -47,7 +47,6 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
         "@demo/root-config": "//localhost:9000/demo-root-config.js",
         "@demo/users": "//localhost:9002/main.js"
       }
@@ -76,5 +75,14 @@
     System.import('@demo/root-config');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
+
+  <!-- Loading MFE in a static way -->
+  <div class="users-mfe-block">
+<!--    <div id="single-spa-application:users"></div>-->
+  </div>
+
+  <!-- Loading MFE dynamically -->
+  <div id="container"></div>
+
 </body>
 </html>
