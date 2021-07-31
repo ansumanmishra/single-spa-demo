@@ -1,0 +1,25 @@
+{
+  "name": "single-spa-demo",
+  "version": "1.0.0",
+  "description": "Single Spa Demo",
+  "scripts": {
+    "start": "concurrently \"cd ./root-config && pnpm start\" \"cd ./navigation && npm run serve:single-spa:navigation\" \"cd ./users && npm run serve:single-spa:users\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ansumanmishra/single-spa-demo.git"
+  },
+  "keywords": [
+    "Single SPA",
+    "Micro frontend"
+  ],
+  "author": "Ansuman Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ansumanmishra/single-spa-demo/issues"
+  },
+  "homepage": "https://github.com/ansumanmishra/single-spa-demo#readme",
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
