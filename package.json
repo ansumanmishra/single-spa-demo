@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Single Spa Demo",
   "scripts": {
-    "start": "concurrently \"cd ./root-config && pnpm start\" \"cd ./navigation && npm run serve:single-spa:navigation\" \"cd ./users && npm run serve:single-spa:users\""
+    "start": "concurrently \"node main.js\" \"cd ./root-config && pnpm start\" \"cd ./navigation && npm run serve:single-spa:navigation\" \"cd ./users && npm run serve:single-spa:users\""
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ansumanmishra/single-spa-demo#readme",
   "dependencies": {
-    "concurrently": "^6.2.0"
+    "concurrently": "^6.2.0",
+    "figlet": "^1.5.0"
   }
 }
