@@ -48,7 +48,13 @@
     {
       "imports": {
         "@demo/root-config": "//localhost:9000/demo-root-config.js",
+        "@demo/navigation": "//localhost:9001/main.js",
         "@demo/users": "//localhost:9002/main.js"
+      },
+      "scopes": {
+        "@demo/users": {
+
+        }
       }
     }
   </script>
@@ -76,6 +82,9 @@
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 
+  <nav>
+    <div id="single-spa-application:navigation"></div>
+  </nav>
   <!-- Loading MFE in a static way -->
   <div class="users-mfe-block">
 <!--    <div id="single-spa-application:users"></div>-->

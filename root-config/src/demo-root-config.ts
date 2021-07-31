@@ -29,4 +29,10 @@ registerApplication({
   },
 });
 
+registerApplication({
+  name: "navigation",
+  app: () => System.import("//localhost:9001/main.js"),
+  activeWhen: "/",
+});
+
 start();
