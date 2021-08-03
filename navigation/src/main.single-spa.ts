@@ -7,6 +7,8 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 import { singleSpaPropsSubject } from './single-spa/single-spa-props';
 import { keyword$ } from '@demo/utility';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 if (environment.production) {
   enableProdMode();
@@ -21,8 +23,15 @@ const lifecycles = singleSpaAngular({
   NgZone,
 });
 
-keyword$.subscribe((res) => console.log(res));
+const unsubscribe$ = new Subject();
+keyword$.pipe(takeUntil(unsubscribe$)).subscribe((res) => console.log(res));
 
 export const bootstrap = lifecycles.bootstrap;
 export const mount = lifecycles.mount;
-export const unmount = lifecycles.unmount;
+export const unmount = [
+  lifecycles.unmount,
+  async () => {
+    unsubscribe$.next();
+    unsubscribe$.complete();
+  },
+];
