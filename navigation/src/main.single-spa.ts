@@ -6,6 +6,7 @@ import { singleSpaAngular } from 'single-spa-angular';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 import { singleSpaPropsSubject } from './single-spa/single-spa-props';
+import { keyword$ } from '@demo/utility';
 
 if (environment.production) {
   enableProdMode();
@@ -19,6 +20,8 @@ const lifecycles = singleSpaAngular({
   template: '<nav-root />',
   NgZone,
 });
+
+keyword$.subscribe((res) => console.log(res));
 
 export const bootstrap = lifecycles.bootstrap;
 export const mount = lifecycles.mount;

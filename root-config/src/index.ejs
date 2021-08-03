@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Root Config</title>
+  <title>Single Spa Demo</title>
+
+  <link rel="stylesheet" href="styles.css">
 
   <!--
     Remove this if you only support browsers that support async/await.
@@ -49,7 +51,8 @@
       "imports": {
         "@demo/root-config": "//localhost:9000/demo-root-config.js",
         "@demo/navigation": "//localhost:9001/main.js",
-        "@demo/users": "//localhost:9002/main.js"
+        "@demo/users": "//localhost:9002/main.js",
+        "@demo/utility": "//localhost:9003/demo-utility.js"
       },
       "scopes": {
         "@demo/users": {
@@ -87,7 +90,7 @@
   </nav>
   <!-- Loading MFE in a static way -->
   <div class="users-mfe-block">
-<!--    <div id="single-spa-application:users"></div>-->
+    <!-- <div id="single-spa-application:users"></div> -->
   </div>
 
   <!-- Loading MFE dynamically -->

@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { APP_BASE_HREF } from '@angular/common';
 import { EmptyRouteComponent } from './empty-route/empty-route.component';
+import { MatInputModule } from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes = [
   {
@@ -19,8 +21,10 @@ const routes = [
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
+    MatInputModule,
     RouterModule.forRoot(routes),
   ],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],

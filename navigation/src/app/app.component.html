@@ -1,21 +1,12 @@
 <mat-toolbar color="primary">
-  <button
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with menu icon"
-  >
-    <mat-icon>menu</mat-icon>
-  </button>
   <span>Single Spa Demo</span>
   <span class="example-spacer"></span>
   <a routerLink="/" mat-button>Home</a>
   <a routerLink="users" mat-button>Users</a>
   <span class="example-spacer"></span>
-  <button
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with share icon"
-  >
-    <input type="text" placeholder="Search" />
-  </button>
+  <form class="example-form">
+    <mat-form-field class="example-full-width" appearance="legacy">
+      <input matInput placeholder="Search" />
+    </mat-form-field>
+  </form>
 </mat-toolbar>
