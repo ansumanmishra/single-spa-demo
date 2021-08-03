@@ -6,7 +6,12 @@
   <span class="example-spacer"></span>
   <form class="example-form">
     <mat-form-field class="example-full-width" appearance="legacy">
-      <input matInput placeholder="Search" />
+      <input
+        matInput
+        placeholder="Search"
+        #keyword
+        (input)="keywordEntered$.next(keyword.value)"
+      />
     </mat-form-field>
   </form>
 </mat-toolbar>

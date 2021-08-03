@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { keywordEntered$ } from 'src/single-spa/single-spa-props';
 
 @Component({
   selector: 'nav-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  keywordEntered$ = keywordEntered$;
   title = 'navigation';
 }
