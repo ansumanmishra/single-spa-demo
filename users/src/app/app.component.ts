@@ -1,13 +1,24 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { singleSpaPropsSubject } from '../single-spa/single-spa-props';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'users';
-  singleSpaPropsSubject: Observable<any> = singleSpaPropsSubject;
+  keyword: string;
+  someText: string;
+
+  constructor(private readonly cd: ChangeDetectorRef) {}
+
+  ngOnInit(): void {
+    singleSpaPropsSubject.subscribe((props: any) => {
+      this.keyword = props.keyword;
+      this.someText = props.someText;
+
+      this.cd.detectChanges();
+    });
+  }
 }
