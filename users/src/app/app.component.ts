@@ -1,5 +1,6 @@
 import { ChangeDetectorRef, Component, OnInit, VERSION } from '@angular/core';
 import { singleSpaPropsSubject } from '../single-spa/single-spa-props';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,9 @@ import { singleSpaPropsSubject } from '../single-spa/single-spa-props';
 })
 export class AppComponent implements OnInit {
   title = 'users';
-  keyword: string;
+  keyword$: BehaviorSubject<string | undefined> = new BehaviorSubject<
+    string | undefined
+  >(undefined);
   someText: string;
   angularVersion = VERSION;
 
@@ -16,7 +19,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     singleSpaPropsSubject.subscribe((props: any) => {
-      this.keyword = props.keyword;
+      this.keyword$.next(props.keyword);
       this.someText = props.someText;
 
       this.cd.detectChanges();
