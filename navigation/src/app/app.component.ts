@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, VERSION } from '@angular/core';
 import { keywordEntered$ } from 'src/single-spa/single-spa-props';
 
 @Component({
@@ -9,4 +9,5 @@ import { keywordEntered$ } from 'src/single-spa/single-spa-props';
 export class AppComponent {
   keywordEntered$ = keywordEntered$;
   title = 'navigation';
+  angularVersion = VERSION;
 }

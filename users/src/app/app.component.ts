@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, VERSION } from '@angular/core';
 import { singleSpaPropsSubject } from '../single-spa/single-spa-props';
 
 @Component({
@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   title = 'users';
   keyword: string;
   someText: string;
+  angularVersion = VERSION;
 
   constructor(private readonly cd: ChangeDetectorRef) {}
 

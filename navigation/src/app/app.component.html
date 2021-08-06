@@ -1,17 +1,31 @@
 <mat-toolbar color="primary">
-  <span>Single Spa Demo</span>
-  <span class="example-spacer"></span>
-  <a routerLink="/" mat-button>Home</a>
-  <a routerLink="users" mat-button>Users</a>
-  <span class="example-spacer"></span>
-  <form class="example-form">
-    <mat-form-field class="example-full-width" appearance="legacy">
-      <input
-        matInput
-        placeholder="Search"
-        #keyword
-        (input)="keywordEntered$.next(keyword.value)"
-      />
-    </mat-form-field>
-  </form>
+  <mat-toolbar-row>
+    <h1>Single Spa Demo</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a routerLink="/" mat-button>Home</a>
+      <a routerLink="users" mat-button>Users</a>
+    </div>
+    <span class="example-spacer"></span>
+    <span style="font-size: 12px"
+      >Angular Version ({{ angularVersion.full }})</span
+    >
+    <span class="example-spacer"></span>
+    <div style="font-size: 12px">
+      <form class="example-form">
+        <mat-form-field
+          class="example-full-width"
+          appearance="legacy"
+          floatLabel="never"
+        >
+          <input
+            matInput
+            placeholder="Enter Keyword"
+            #keyword
+            (input)="keywordEntered$.next(keyword.value)"
+          />
+        </mat-form-field>
+      </form>
+    </div>
+  </mat-toolbar-row>
 </mat-toolbar>
