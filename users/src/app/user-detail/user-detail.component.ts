@@ -1,9 +1,9 @@
 import { Component, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { map, takeUntil } from 'rxjs/operators';
-import { UsersService } from '../users.service';
+import { UsersService } from '../users/users.service';
 import { combineLatest, Observable, Subject } from 'rxjs';
-import { User } from '../user';
+import { User } from '../users/user';
 
 @Component({
   selector: 'app-user-detail',

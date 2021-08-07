@@ -7,13 +7,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { Route, RouterModule } from '@angular/router';
 import { APP_BASE_HREF } from '@angular/common';
 import { EmptyRouteComponent } from './empty-route/empty-route.component';
-import { UserDetailComponent } from './users/user-detail/user-detail.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 const routes: Route[] = [
   {
     path: 'users/detail/:userId',
-    component: UserDetailComponent,
+    loadChildren: () =>
+      import('./user-detail/user-details.module').then(
+        (m) => m.UserDetailsModule
+      ),
   },
   {
     path: '**',
@@ -22,7 +24,7 @@ const routes: Route[] = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, UsersComponent, UserDetailComponent],
+  declarations: [AppComponent, UsersComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
