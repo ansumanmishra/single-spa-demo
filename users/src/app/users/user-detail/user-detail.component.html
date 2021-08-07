@@ -1,0 +1,7 @@
+<div *ngIf="usersFiltered$ | async as users">
+  <p>Id: {{ users[0].id }}</p>
+  <p>Name: {{ users[0].first_name }} {{ users[0].last_name }}</p>
+  <p>Email: {{ users[0].email }}</p>
+  <p>Gender: {{ users[0].gender }}</p>
+  <p>City: {{ users[0].city }}</p>
+</div>

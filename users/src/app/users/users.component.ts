@@ -7,7 +7,22 @@ import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
-  styles: [``],
+  styles: [
+    `
+      .styled-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      }
+      .styled-table th,
+      .styled-table td {
+        padding: 10px 10px;
+      }
+    `,
+  ],
 })
 export class UsersComponent implements OnInit {
   users$: Observable<User[]> = this.usersService.users$;

@@ -1,16 +1,16 @@
-<table>
+<table width="100%" class="styled-table">
   <tr>
-    <th>Id</th>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Gender</th>
-    <th>City</th>
+    <th align="left">Id</th>
+    <th align="left">Name</th>
+    <th align="left">City</th>
   </tr>
   <tr *ngFor="let user of usersWithKeyword$ | async">
     <td>{{ user.id }}</td>
-    <td>{{ user.first_name }} {{ user.last_name }}</td>
-    <td>{{ user.email }}</td>
-    <td>{{ user.gender }}</td>
+    <td>
+      <a [routerLink]="['users', 'detail', user.id]"
+        >{{ user.first_name }} {{ user.last_name }}</a
+      >
+    </td>
     <td>{{ user.city }}</td>
   </tr>
 </table>

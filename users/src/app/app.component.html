@@ -1,4 +1,12 @@
 <h1>Users MFE</h1>
 <h4>Angular Version ({{ angularVersion.full }})</h4>
-<app-users [keyword]="keyword$"></app-users>
+
 <p>{{ someText }}</p>
+<div fxLayout="row" fxLayoutGap="20" fxLayoutAlign="space-around start">
+  <div fxFlex="70">
+    <app-users [keyword]="keyword$"></app-users>
+  </div>
+  <div fxFlex="30">
+    <router-outlet></router-outlet>
+  </div>
+</div>
