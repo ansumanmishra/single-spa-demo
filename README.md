@@ -1,3 +1,12 @@
+This demo covers the following things:
+Single Spa router config
+
+Custom Props
+
+Integrating different versions of Angular application
+
+Intercommunication between Microfrontends
+
 # Installling specific version of Angular:
 
 ### npx @angular/cli@9 new navigation

@@ -34,7 +34,9 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+        "rxjs": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.3-fix.0/system/es5/rxjs.min.js",
+        "rxjs/operators": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.3-fix.0/system/es5/rxjs-operators.min.js"
       }
     }
   </script>
@@ -51,11 +53,6 @@
         "@demo/navigation": "//localhost:9001/main.js",
         "@demo/users": "//localhost:9002/main.js",
         "@demo/utility": "//localhost:9003/demo-utility.js"
-      },
-      "scopes": {
-        "@demo/users": {
-
-        }
       }
     }
   </script>
