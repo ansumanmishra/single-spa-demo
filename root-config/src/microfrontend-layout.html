@@ -1,7 +1,10 @@
 <single-spa-router>
-  <main>
+  <nav>
+    <application name="@demo/navigation"></application>
+  </nav>
+  <div id="container" style="margin: 20px">
     <route path="users">
-      <application name="@demo/users"></application>
+      <application name="@demo/users" props="someText"></application>
     </route>
-  </main>
+  </div>
 </single-spa-router>

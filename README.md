@@ -5,7 +5,15 @@ Custom Props
 
 Integrating different versions of Angular application
 
+Integrating Webcomponent
+
 Intercommunication between Microfrontends
+
+Sharing dependencies
+
+Scope wise sharing dependencies
+
+Working in local (Import map overrides)
 
 # Installling specific version of Angular:
 

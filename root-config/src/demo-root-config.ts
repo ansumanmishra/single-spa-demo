@@ -6,7 +6,14 @@ import {
 } from "single-spa-layout";
 /* import microfrontendLayout from "./microfrontend-layout.html";
 
-const routes = constructRoutes(microfrontendLayout);
+const data = {
+  props: {
+    someText: "This text comes from container through custom props"
+  }
+}
+
+// @ts-ignore
+const routes = constructRoutes(microfrontendLayout, data);
 const applications = constructApplications({
   routes,
   loadApp({ name }) {
@@ -21,17 +28,17 @@ start();*/
 
 registerApplication({
   name: "users",
-  app: () => System.import("//localhost:9002/main.js"),
+  app: () => System.import("@demo/users"),
   activeWhen: ["/users"],
   customProps: {
     domElementGetter: () => document.getElementById("container"),
-    someText: "Hello",
+    someText: "This text comes from container through custom props",
   },
 });
 
 registerApplication({
   name: "navigation",
-  app: () => System.import("//localhost:9001/main.js"),
+  app: () => System.import("@demo/navigation"),
   activeWhen: "/",
 });
 
