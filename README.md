@@ -11,6 +11,10 @@ Intercommunication between Microfrontends
 
 ### npx @angular/cli@9 new navigation
 
+# Using Angular core as shared dependency
+
+### https://github.com/esm-bundle/angular__core
+
 ### Errors
 
 1. options has an unknown property 'firewall'
