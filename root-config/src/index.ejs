@@ -35,8 +35,14 @@
     {
       "imports": {
         "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
-        "rxjs": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.3-fix.0/system/es5/rxjs.min.js",
-        "rxjs/operators": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.3-fix.0/system/es5/rxjs-operators.min.js"
+        "rxjs": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.5.4/system/rxjs.min.js",
+        "rxjs/operators": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.5.4/system/rxjs-operators.min.js"
+      },
+      "scopes": {
+        "//localhost:9002/": {
+          "rxjs": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.0/system/es5/rxjs.min.js",
+          "rxjs/operators": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.0/system/es5/rxjs-operators.min.js"
+        }
       }
     }
   </script>
