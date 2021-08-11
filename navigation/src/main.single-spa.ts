@@ -11,7 +11,7 @@ import {
 } from './single-spa/single-spa-props';
 import { keyword$ } from '@demo/utility';
 import { Subject } from 'rxjs';
-import { takeUntil } from 'rxjs/operators';
+import { debounceTime, takeUntil } from 'rxjs/operators';
 
 if (environment.production) {
   enableProdMode();
@@ -28,7 +28,7 @@ const lifecycles = singleSpaAngular({
 
 const unsubscribe$ = new Subject();
 keywordEntered$
-  .pipe(takeUntil(unsubscribe$))
+  .pipe(takeUntil(unsubscribe$), debounceTime(200))
   .subscribe((keyword) => keyword$.next(keyword));
 
 export const bootstrap = lifecycles.bootstrap;

@@ -1,21 +1,37 @@
-import { Component, Prop, h, State } from '@stencil/core';
+import { Prop, h, State, Watch, Component } from '@stencil/core';
 
 @Component({
-  tag: 'my-component',
+  tag: 'weather-widget',
   styleUrl: 'my-component.css',
   shadow: true,
 })
 export class MyComponent {
   @Prop() city: string;
   @State() weatherData: any;
+  @State() message = 'Loading...';
+
+  @Watch('city')
+  getWeatherData(newValue: string, oldValue?: string) {
+    if (newValue !== oldValue && newValue.length >= 3) {
+      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=246d81ad63dba613bf2967fe6b3f0192&units=metric`)
+        .then((response: Response) => {
+          if (response.ok) {
+            return response.json();
+          } else {
+            this.message = `Invalid city ${newValue}`;
+          }
+        })
+        .then(response => {
+          this.weatherData = response;
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    }
+  }
 
   componentWillLoad() {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=246d81ad63dba613bf2967fe6b3f0192&units=metric`)
-      .then((response: Response) => response.json())
-      .then(response => {
-        this.weatherData = response;
-        console.log(this.weatherData);
-      });
+    this.getWeatherData(this.city);
   }
 
   render() {
@@ -39,7 +55,7 @@ export class MyComponent {
             </div>
           </article>
         ) : (
-          <div>Loading...</div>
+          <article class="widget">{this.message}</article>
         )}
       </div>
     );

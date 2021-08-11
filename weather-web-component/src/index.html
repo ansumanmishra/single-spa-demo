@@ -3,14 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>Stencil Component Starter</title>
+    <title>Weather Widget</title>
 
     <script type="module" src="/build/weather-web-component.esm.js"></script>
     <script nomodule src="/build/weather-web-component.js"></script>
   </head>
   <body>
     <div>
-      <my-component city="Bern"></my-component>
+      <weather-widget city="Bern"></weather-widget>
+      <script>
+        // Testing prop change
+        // setTimeout( () => {
+        //   const weatherWidget = document.querySelector('weather-widget');
+        //   if (weatherWidget) {
+        //     weatherWidget.setAttribute('city','Bern');
+        //     weatherWidget.city = 'London';
+        //   }
+        // }, 2000);
+      </script>
     </div>
   </body>
 </html>

@@ -33,3 +33,7 @@ Working in local (Import map overrides)
 
    Check if the module is added in the importmap
    Check if the import map is valid (No Missing/extra comma)
+
+Project Installation -
+
+Install pnpm - pnpm is being used for root config and utility module

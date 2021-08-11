@@ -6,33 +6,33 @@
  */
 import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 export namespace Components {
-  interface MyComponent {
+  interface WeatherWidget {
     city: string;
   }
 }
 declare global {
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  interface HTMLWeatherWidgetElement extends Components.WeatherWidget, HTMLStencilElement {}
+  var HTMLWeatherWidgetElement: {
+    prototype: HTMLWeatherWidgetElement;
+    new (): HTMLWeatherWidgetElement;
   };
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'weather-widget': HTMLWeatherWidgetElement;
   }
 }
 declare namespace LocalJSX {
-  interface MyComponent {
+  interface WeatherWidget {
     city?: string;
   }
   interface IntrinsicElements {
-    'my-component': MyComponent;
+    'weather-widget': WeatherWidget;
   }
 }
 export { LocalJSX as JSX };
 declare module '@stencil/core' {
   export namespace JSX {
     interface IntrinsicElements {
-      'my-component': LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+      'weather-widget': LocalJSX.WeatherWidget & JSXBase.HTMLAttributes<HTMLWeatherWidgetElement>;
     }
   }
 }

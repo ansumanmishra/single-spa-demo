@@ -27,7 +27,7 @@ specifiers:
   single-spa-layout: 1.6.0
   ts-config-single-spa: ^2.0.0
   typescript: ^4.1.2
-  weather-web-component-stencil: 0.0.1
+  weather-web-component-stencil: 0.0.5
   webpack: ^5.8.0
   webpack-cli: ^4.2.0
   webpack-config-single-spa-ts: ^3.0.0
@@ -41,7 +41,7 @@ dependencies:
   single-spa: 5.9.3
   single-spa-html: 1.3.0
   single-spa-layout: 1.6.0
-  weather-web-component-stencil: 0.0.1
+  weather-web-component-stencil: 0.0.5
   webpack-dev-server: 4.0.0-rc.0_webpack-cli@4.7.2+webpack@5.47.1
 
 devDependencies:
@@ -7526,8 +7526,8 @@ packages:
       minimalistic-assert: 1.0.1
     dev: false
 
-  /weather-web-component-stencil/0.0.1:
-    resolution: {integrity: sha512-gSJV8sGxqiM1HKDiRjkhKF6OP8vykputKO8nUnfc+MWTIivwpddpQveILxoW+rspk7dV9gkHfrXb2E89RZaidg==}
+  /weather-web-component-stencil/0.0.5:
+    resolution: {integrity: sha512-d6waKXkG984bXbGfQ6wbg710b8vImpdDwdYwnqXJhWiFPhrxEuwH41CJ2RKfHYwU2HG44MMMZA4yj11pkZicXQ==}
     dependencies:
       '@stencil/core': 2.6.0
     dev: false
