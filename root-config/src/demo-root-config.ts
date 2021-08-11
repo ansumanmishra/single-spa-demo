@@ -4,7 +4,9 @@ import {
   constructRoutes,
   constructLayoutEngine,
 } from "single-spa-layout";
-/* import microfrontendLayout from "./microfrontend-layout.html";
+import { WeatherApp } from "./weather-app";
+
+/*import microfrontendLayout from "./microfrontend-layout.html";
 
 const data = {
   props: {
@@ -39,6 +41,12 @@ registerApplication({
 registerApplication({
   name: "navigation",
   app: () => System.import("@demo/navigation"),
+  activeWhen: "/",
+});
+
+registerApplication({
+  name: "weather",
+  app: WeatherApp,
   activeWhen: "/",
 });
 
