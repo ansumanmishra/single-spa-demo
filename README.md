@@ -1,29 +1,40 @@
-This demo covers the following things:
-Single Spa router config
+# Single SPA Demo
 
-Custom Props
+### Features:
 
-Integrating different versions of Angular application
+- Single Spa router config
+- Custom Props
+- Integrating different versions of Angular application
+- Integrating Webcomponent
+- Intercommunication between Microfrontends
+- Sharing dependencies
+- Scope wise sharing dependencies
+- Working in local (Import map overrides)
 
-Integrating Webcomponent
+## Installation
 
-Intercommunication between Microfrontends
+1. Install `pnpm` package globally
+   ```
+   Install pnpm - npm i -g pnpm
+   ```
+2. `Root directory`, `navigation` & `users`
+   ```
+   npm insall
+   ```
+3. CD into `root-config` and `utility` and run:
+   ```
+   pnpm install
+   ```
 
-Sharing dependencies
+## Run Application
 
-Scope wise sharing dependencies
+In the root directory run:
 
-Working in local (Import map overrides)
+```
+npm start
+```
 
-# Installling specific version of Angular:
-
-### npx @angular/cli@9 new navigation
-
-# Using Angular core as shared dependency
-
-### https://github.com/esm-bundle/angular__core
-
-### Errors
+## Tacking Errors
 
 1. options has an unknown property 'firewall'
 
@@ -34,6 +45,14 @@ Working in local (Import map overrides)
    Check if the module is added in the importmap
    Check if the import map is valid (No Missing/extra comma)
 
-Project Installation -
+## Other Useful Links:
 
-Install pnpm - pnpm is being used for root config and utility module
+### Using Angular core as shared dependency
+
+https://github.com/esm-bundle/angular__core
+
+### Installling specific version of Angular:
+
+```
+npx @angular/cli@9 new navigation
+```
