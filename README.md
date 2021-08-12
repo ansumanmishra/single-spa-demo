@@ -34,6 +34,8 @@ In the root directory run:
 npm start
 ```
 
+You can access the application at - [http://localhost:9000/](http://localhost:9000/)
+
 ## Tacking Errors
 
 1. options has an unknown property 'firewall'
@@ -49,7 +51,7 @@ npm start
 
 ### Using Angular core as shared dependency
 
-https://github.com/esm-bundle/angular__core
+[https://github.com/esm-bundle/angular\_\_core](https://github.com/esm-bundle/angular__core)
 
 ### Installling specific version of Angular:
 
