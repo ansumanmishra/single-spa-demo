@@ -19,7 +19,7 @@
    ```
 2. `Root directory`, `navigation` & `users`
    ```
-   npm insall
+   npm install
    ```
 3. CD into `root-config` and `utility` and run:
    ```
