@@ -13,7 +13,7 @@
 
 ## Installation
 
-1. Install **pnpm**` package globally
+1. Install **pnpm** package globally
    ```
    npm i -g pnpm
    ```
