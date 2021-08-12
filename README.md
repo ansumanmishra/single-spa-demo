@@ -9,19 +9,19 @@
 - Intercommunication between Microfrontends
 - Sharing dependencies
 - Scope wise sharing dependencies
-- Working in local (Import map overrides)
+- Import map overrides
 
 ## Installation
 
-1. Install `pnpm` package globally
+1. Install **pnpm**` package globally
    ```
-   Install pnpm - npm i -g pnpm
+   npm i -g pnpm
    ```
-2. `Root directory`, `navigation` & `users`
+2. **Root directory**, **navigation** & **users**
    ```
    npm install
    ```
-3. CD into `root-config` and `utility` and run:
+3. CD into **root-config** and **utility** and run:
    ```
    pnpm install
    ```
