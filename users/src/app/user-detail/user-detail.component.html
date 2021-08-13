@@ -1,4 +1,4 @@
-<div *ngIf="usersFiltered$ | async as users">
+<div class="user-details-block" *ngIf="usersFiltered$ | async as users">
   <p>Id: {{ users[0].id }}</p>
   <p>Name: {{ users[0].first_name }} {{ users[0].last_name }}</p>
   <p>Email: {{ users[0].email }}</p>

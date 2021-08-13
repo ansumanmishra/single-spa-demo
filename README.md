@@ -36,7 +36,7 @@ npm start
 
 You can access the application at - [http://localhost:9000/](http://localhost:9000/)
 
-## Tacking Errors
+## Tracking Errors
 
 1. options has an unknown property 'firewall'
 
