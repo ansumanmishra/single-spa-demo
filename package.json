@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Single Spa Demo",
   "scripts": {
-    "start": "concurrently \"node main.js\" \"cd ./root-config && pnpm start\" \"cd ./navigation && npm run serve:single-spa:navigation\" \"cd ./users && npm run serve:single-spa:users\" \"cd ./utility && pnpm start -- --port 9003\""
+    "start": "concurrently \"node main.js\" \"cd ./root-config && pnpm start\" \"cd ./navigation && npm run serve:single-spa:navigation\" \"cd ./users && npm run serve:single-spa:users\" \"cd ./utility && pnpm start -- --port 9003\" \"cd ./accounts && serve:single-spa:accounts\""
   },
   "repository": {
     "type": "git",
