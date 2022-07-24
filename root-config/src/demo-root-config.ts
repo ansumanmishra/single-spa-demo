@@ -38,7 +38,7 @@ registerApplication({
   },
 });
 
-registerApplication({
+/*registerApplication({
   name: "accounts",
   app: () => System.import("@demo/accounts"),
   activeWhen: ["/accounts"],
@@ -46,7 +46,7 @@ registerApplication({
     domElementGetter: () => document.getElementById("container"),
     someText: "This text comes from container through custom props",
   },
-});
+});*/
 
 registerApplication({
   name: "navigation",
