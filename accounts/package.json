@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:single-spa:accounts": "ng build accounts --configuration production",
-    "serve:single-spa:accounts": "ng s --project accounts --disable-host-check --port 9003 --live-reload false"
+    "serve:single-spa:accounts": "ng s --project accounts --disable-host-check --port 9004 --live-reload false"
   },
   "private": true,
   "dependencies": {
