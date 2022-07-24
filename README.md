@@ -10,6 +10,7 @@
 - Sharing dependencies
 - Scope wise sharing dependencies
 - Import map overrides
+- Creating/Using Angular Parcels
 
 ## Installation
 
