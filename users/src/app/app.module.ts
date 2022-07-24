@@ -11,6 +11,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 const routes: Route[] = [
   {
+    path: 'users/account',
+    loadChildren: () => import('./accounts-parcel/accounts-parcel.module').then( m => m.AccountsParcelModule)
+  },
+  {
     path: 'users/detail/:userId',
     loadChildren: () =>
       import('./user-detail/user-details.module').then(
