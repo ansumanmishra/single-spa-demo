@@ -8,6 +8,7 @@ import { mountRootParcel } from 'single-spa';
 })
 export class AccountDetailsComponent implements OnInit {
   mountRootParcel = mountRootParcel;
+  parcelProps = { accountsProp: 'accountsProp' };
 
   constructor() { }
 
@@ -18,4 +19,7 @@ export class AccountDetailsComponent implements OnInit {
     return (window as any).System.import('@demo/accounts');
   }
 
+  ngparcelMounted():void {
+    console.log('Accounts parcel mounted');
+  }
 }
