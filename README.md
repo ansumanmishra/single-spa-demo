@@ -59,3 +59,6 @@ You can access the application at - [http://localhost:9000/](http://localhost:90
 ```
 npx @angular/cli@9 new navigation
 ```
+
+## Screenshot
+![img.png](img.png)
