@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:single-spa:navigation": "ng build navigation --prod --deploy-url http://localhost:9001/",
-    "serve:single-spa:navigation": "ng s --project navigation --disable-host-check --port 9001 --deploy-url http://localhost:9001/ --live-reload false"
+    "start-local": "ng s --project navigation --disable-host-check --port 9001 --deploy-url http://localhost:9001/ --live-reload false"
   },
   "private": true,
   "dependencies": {
