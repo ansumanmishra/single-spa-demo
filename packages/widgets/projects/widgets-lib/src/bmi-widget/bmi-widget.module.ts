@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BmiWidgetComponent } from './bmi-widget.component';
 
 
@@ -7,10 +8,11 @@ import { BmiWidgetComponent } from './bmi-widget.component';
   declarations: [
     BmiWidgetComponent
   ],
-  imports: [
-  ],
   exports: [
     BmiWidgetComponent
+  ],
+  imports: [
+    CommonModule
   ]
 })
 export class BmiWidgetModule { }

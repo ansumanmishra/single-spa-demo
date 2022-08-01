@@ -2,13 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-bmi-widget',
-  template: `
-    <p>
-      bmi-widget works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl: './bmi-widget.component.html',
+  styleUrls: ['./bmi-widget.component.css']
 })
 export class BmiWidgetComponent implements OnInit {
 

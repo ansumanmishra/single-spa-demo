@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, '../../coverage/bmi-widget'),
+      dir: require('path').join(__dirname, '../../coverage/widgets-lib'),
       subdir: '.',
       reporters: [
         { type: 'html' },

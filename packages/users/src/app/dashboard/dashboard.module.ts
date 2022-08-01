@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard.component';
-import {BmiWidgetModule} from "bmi-widget";
 import {RouterModule} from "@angular/router";
+import {BmiWidgetModule, CalcWidgetModule} from "widgets-lib";
 
 const routes = [{
   path: '',
@@ -11,12 +11,13 @@ const routes = [{
 
 @NgModule({
   declarations: [
-    DashboardComponent
+    DashboardComponent,
   ],
   imports: [
     CommonModule,
-    BmiWidgetModule,
     RouterModule.forChild(routes),
-  ]
+    BmiWidgetModule,
+    CalcWidgetModule
+  ],
 })
 export class DashboardModule { }
