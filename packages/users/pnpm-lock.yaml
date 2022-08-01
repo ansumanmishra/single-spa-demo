@@ -17,6 +17,7 @@ specifiers:
   '@angular/router': ~13.3.11
   '@types/jasmine': ~3.8.0
   '@types/node': ^12.11.1
+  bmi-widget: ^0.0.1
   jasmine-core: ~3.8.0
   karma: ~6.3.0
   karma-chrome-launcher: ~3.1.0
@@ -42,6 +43,7 @@ dependencies:
   '@angular/platform-browser': 13.3.11_dontfr2itdbwnai2bloqfkk3ui
   '@angular/platform-browser-dynamic': 13.3.11_ovunbf5pfqpgs344qovmyresle
   '@angular/router': 13.3.11_ngcav2jk6phtonomh6fl2dj7bq
+  bmi-widget: 0.0.1_ve2xnktmvxgo5glgd6utpzcxwq
   rxjs: 6.6.7
   single-spa: 5.9.4
   single-spa-angular: 6.3.1_lvacchre4zik3okhepreubscce
@@ -2533,6 +2535,17 @@ packages:
       inherits: 2.0.4
       readable-stream: 3.6.0
     dev: true
+
+  /bmi-widget/0.0.1_ve2xnktmvxgo5glgd6utpzcxwq:
+    resolution: {integrity: sha512-9M1evSzX2akAGI8nYboQuT7maS/f5dSrIcoUmgRtLAJC0pAJpjo609xxZtALfgJgK6K2qW1K29aUYI2isnopEA==}
+    peerDependencies:
+      '@angular/common': ^12.1.0
+      '@angular/core': ^12.1.0
+    dependencies:
+      '@angular/common': 13.3.11_jja5hswza62cyrzuv2ki4dnjcu
+      '@angular/core': 13.3.11_rxjs@6.6.7+zone.js@0.11.7
+      tslib: 2.4.0
+    dev: false
 
   /body-parser/1.20.0:
     resolution: {integrity: sha512-DfJ+q6EPcGKZD1QWUjSpqp+Q7bDQTsQIF4zfUAtZ6qk+H/3/QRhg9CEp39ss+/T2vw0+HaidC0ecJj/DRLIaKg==}

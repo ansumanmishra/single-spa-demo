@@ -1,0 +1,39 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "bmi-widget": {
+      "projectType": "library",
+      "root": "projects/bmi-widget",
+      "sourceRoot": "projects/bmi-widget/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/bmi-widget/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/bmi-widget/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/bmi-widget/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/bmi-widget/src/test.ts",
+            "tsConfig": "projects/bmi-widget/tsconfig.spec.json",
+            "karmaConfig": "projects/bmi-widget/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "bmi-widget"
+}

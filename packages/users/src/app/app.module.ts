@@ -15,6 +15,10 @@ const routes: Route[] = [
     loadChildren: () => import('./accounts-parcel/accounts-parcel.module').then( m => m.AccountsParcelModule)
   },
   {
+    path: 'users/dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardModule)
+  },
+  {
     path: 'users/detail/:userId',
     loadChildren: () =>
       import('./user-detail/user-details.module').then(
