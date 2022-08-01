@@ -2,7 +2,7 @@
   "name": "@demo/utility",
   "scripts": {
     "start": "webpack serve",
-    "start:standalone": "webpack serve --env standalone",
+    "start-local": "webpack serve --env standalone --port 9003",
     "build": "webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",
     "lint": "eslint src --ext js,ts,tsx",
