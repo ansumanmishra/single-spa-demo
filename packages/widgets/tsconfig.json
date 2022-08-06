@@ -4,17 +4,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "bmi-widget": [
-        "dist/bmi-widget/bmi-widget",
-        "dist/bmi-widget"
-      ],
-      "payments": [
-        "dist/payments/payments",
-        "dist/payments"
-      ],
-      "widgets-lib": [
-        "dist/widgets-lib/widgets-lib",
-        "dist/widgets-lib"
+      "@demo/widgets-lib/*": [
+        "dist/widgets-lib/*"
       ]
     },
     "outDir": "./dist/out-tsc",
