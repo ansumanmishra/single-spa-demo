@@ -1,0 +1,9 @@
+{
+  "name": "@demo/widgets-lib/bmi-widget",
+  "version": "0.0.13",
+  "peerDependencies": {
+    "lodash": "^4.17.21",
+    "@types/lodash": "^4.14.182",
+    "date-fns": "^2.29.1"
+  }
+}
