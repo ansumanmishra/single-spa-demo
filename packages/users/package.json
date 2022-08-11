@@ -22,7 +22,7 @@
     "@angular/platform-browser": "~13.3.11",
     "@angular/platform-browser-dynamic": "~13.3.11",
     "@angular/router": "~13.3.11",
-    "@demo/widgets-lib": "0.0.13",
+    "@demo/widgets-lib": "0.0.14",
     "rxjs": "~6.6.0",
     "single-spa": "~5.9.4",
     "single-spa-angular": "^6.3.1",

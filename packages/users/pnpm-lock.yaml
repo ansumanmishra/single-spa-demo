@@ -15,7 +15,7 @@ specifiers:
   '@angular/platform-browser': ~13.3.11
   '@angular/platform-browser-dynamic': ~13.3.11
   '@angular/router': ~13.3.11
-  '@demo/widgets-lib': 0.0.13
+  '@demo/widgets-lib': 0.0.14
   '@types/jasmine': ~3.8.0
   '@types/node': ^12.11.1
   jasmine-core: ~3.8.0
@@ -43,7 +43,7 @@ dependencies:
   '@angular/platform-browser': 13.3.11_1b9b32c74898c366811a0add02a95ba2
   '@angular/platform-browser-dynamic': 13.3.11_7568d097af2c1e696f9c83aacc449259
   '@angular/router': 13.3.11_69840ae92af3cf3735cc3f8abd0d3f0c
-  '@demo/widgets-lib': 0.0.13_a93576aa6cadccee99661fa937e457b4
+  '@demo/widgets-lib': 0.0.14_a93576aa6cadccee99661fa937e457b4
   rxjs: 6.6.7
   single-spa: 5.9.4
   single-spa-angular: 6.3.1_5d40211e24e650adb94723e24a064211
@@ -1711,8 +1711,8 @@ packages:
       postcss-selector-parser: 6.0.10
     dev: true
 
-  /@demo/widgets-lib/0.0.13_a93576aa6cadccee99661fa937e457b4:
-    resolution: {integrity: sha512-O7cgl7eqFjKDzPexYH59bdbt7KdFjTFwS5K96vTTz44vlyuHwMyuwsu5ngDv/y9P/PHxLkQ9Mw4fqGnfiv/S/g==}
+  /@demo/widgets-lib/0.0.14_a93576aa6cadccee99661fa937e457b4:
+    resolution: {integrity: sha512-QP67OA6kgs7jslC4+P0QOTA1nhB96zIvXkd+twQjj4KjwOE8NGVzcURNAOGuODE1YISdGL4+GVnFiesbUQRt7g==}
     peerDependencies:
       '@angular/common': ^12.1.0
       '@angular/core': ^12.1.0
