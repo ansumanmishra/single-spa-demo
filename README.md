@@ -11,6 +11,7 @@
 - Scope wise sharing dependencies
 - Import map overrides
 - Creating/Using Angular Parcels
+- Integrating Angular Library (With secondary entry points)
 
 ## Installation
 
@@ -20,7 +21,7 @@
    ```
 2. **Root directory**, **navigation** & **users**
    ```
-   npm install
+   pnpm install
    ```
 3. CD into **root-config** and **utility** and run:
    ```
@@ -33,6 +34,11 @@ In the root directory run:
 
 ```
 npm start
+```
+*note* currently broken, Instead use 
+
+```
+npm run old-start-script
 ```
 
 You can access the application at - [http://localhost:9000/](http://localhost:9000/)
